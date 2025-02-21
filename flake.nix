@@ -8,7 +8,11 @@
   in {
     packages.x86_64-linux.default = pkgs.callPackage ./nix/bapctools.nix {};
     devShells.x86_64-linux.default = pkgs.mkShellNoCC {
-      packages = [ self.outputs.packages.x86_64-linux.default ];
+      packages = [
+        self.outputs.packages.x86_64-linux.default
+      ] ++ (with pkgs; [
+        gnat
+      ]);
     };
   };
 }
