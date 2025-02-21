@@ -8,27 +8,34 @@ def validate_number(n):
         int(n)
 
         # Check for leading zeros
-        if int(n)!=str(int(n)):
+        if int(n) != str(int(n)):
             exit(43)
     except ValueError:
         exit(43)
+
 
 def check_radius(r):
     validate_number(r)
     r = int(r)
 
-    if r < 0 or r > 1000: 
+    if r < 0 or r > 1000:
         exit(43)
+
 
 def check_cord(c):
     validate_number(c)
     c = int(c)
 
-    if c < -1000 or c > 1000: 
+    if c < -1000 or c > 1000:
         exit(43)
+
 
 x1, y1, r1 = input().split()
 x2, y2, r2 = input().split()
+
+# Check for no extra garbage in the input file
+if sys.std.readline() != "":
+    exit(43)
 
 # Check firste circle
 check_cord(x1)

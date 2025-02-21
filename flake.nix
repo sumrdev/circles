@@ -13,6 +13,7 @@
       ] ++ (with pkgs; [
         gnat
         python3
+        ruff
       ]);
     };
   };
