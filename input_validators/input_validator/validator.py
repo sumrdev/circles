@@ -14,15 +14,15 @@ def validate_number(n):
         exit(43)
 
 def check_radius(r):
-    r = int(r)
     validate_number(r)
+    r = int(r)
 
     if r < 0 or r > 1000: 
         exit(43)
 
 def check_cord(c):
-    c = int(c)
     validate_number(c)
+    c = int(c)
 
     if c < -1000 or c > 1000: 
         exit(43)
