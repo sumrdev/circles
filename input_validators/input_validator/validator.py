@@ -40,6 +40,4 @@ check_cord(x2)
 check_cord(y2)
 check_radius(r2)
 
-if sys.stdin.readline() != "": exit(43)
-
 exit(42)
