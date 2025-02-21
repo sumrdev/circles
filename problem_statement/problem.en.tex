@@ -9,17 +9,19 @@
 \newcommand{\maxa}{123456789}
 
 % TODO: Remove this comment when you're done writing the problem statement.
-Given the area $a$ of a square, calculate its perimeter.
+Nix, the futuristic and deterministic package manager, prides itself on ensuring that software installations are reproducible and isolated. However, due to an unforeseen bug in dependency resolution, two packages—represented as circles in Nix’s immutable store—have started to overlap!
+
+The NixOS Hydra build server needs to determine how much disk space is being doubly occupied due to this overlap. Given two circles in a 2D plane, representing the storage areas of two conflicting package installations, your task is to compute the area of their overlapping region.
 
 \begin{Input}
     The input consists of:
     \begin{itemize}
-        \item One line with an integer $a$ ($0\leq a\leq \maxa$), the area of the square.
+        \item One line with six integers $a$ ($0\leq a\leq \maxa$), the area of the square.
     \end{itemize}
 \end{Input}
 
 \begin{Output}
-    Output the perimeter of the square with area $a$.
+    Output the overlapping area of the circles.
 
     Your answer should have an absolute or relative error of at most $10^{-6}$.
 \end{Output}
