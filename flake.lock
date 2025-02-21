@@ -16,9 +16,26 @@
         "type": "github"
       }
     },
+    "nixpkgs-problemtools": {
+      "locked": {
+        "lastModified": 1740137166,
+        "narHash": "sha256-eUQ/0E3CR8c2cxSyOIx3HGWzWupSzVHJFwnmmLCK+Dk=",
+        "owner": "thecolorman",
+        "repo": "nixpkgs",
+        "rev": "58556a09b4c181193d16a0fdcdfb8cfd57c8e1c4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thecolorman",
+        "ref": "add-problemtools",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "nixpkgs-problemtools": "nixpkgs-problemtools"
       }
     }
   },
