@@ -30,6 +30,10 @@ def check_cord(c):
 x1, y1, r1 = input().split()
 x2, y2, r2 = input().split()
 
+# Check for no extra garbage in the input file
+if sys.std.readline() != "":
+    exit(43)
+
 # Check firste circle
 check_cord(x1)
 check_cord(y1)
