@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 import math
 
 x1, y1, r1 = map(int, input().split())
