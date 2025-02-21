@@ -28,6 +28,6 @@ in writeShellApplication {
     texliveMedium
   ];
   text = ''
-    ${py}/bin/python3 ${src}/bin/tools.py
+    ${py}/bin/python3 ${src}/bin/tools.py "$@"
   '';
 }
