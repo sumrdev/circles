@@ -21,7 +21,7 @@ data:
   secret:
     data:
       - large:
-          generate: random.py {seed:1}
+          generate: rand.py {seed:1}
           count: 10
       # You can re-use the input validator by symlinking it as `generator` in
       # this directory. Below is some inspiration for test cases.
