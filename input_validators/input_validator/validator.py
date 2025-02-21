@@ -14,19 +14,21 @@ def validate_number(n):
         exit(43)
 
 def check_radius(r):
+    r = int(r)
     validate_number(r)
 
     if r < 0 or r > 1000: 
-            exit(43)
+        exit(43)
 
 def check_cord(c):
+    c = int(c)
     validate_number(c)
 
     if c < -1000 or c > 1000: 
-            exit(43)
+        exit(43)
 
-x1, y1, r1 = map(int, input().split())
-x2, y2, r2 = map(int, input().split())
+x1, y1, r1 = input().split()
+x2, y2, r2 = input().split()
 
 # Check firste circle
 check_cord(x1)
