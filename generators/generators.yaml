@@ -1,3 +1,4 @@
+solution: /submissions/accepted/marius.py
 #solution: /submissions/accepted/submission.py
 #visualizer: /visualizers/asy.sh
 version: 2024-11 # use this version of the generators framework
@@ -18,7 +19,10 @@ data:
       #      7
 
   secret:
-    data: []
+    data:
+      - large:
+          generate: random.py {seed:1}
+          count: 10
       # You can re-use the input validator by symlinking it as `generator` in
       # this directory. Below is some inspiration for test cases.
       #

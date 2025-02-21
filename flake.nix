@@ -12,6 +12,7 @@
         self.outputs.packages.x86_64-linux.default
       ] ++ (with pkgs; [
         gnat
+        python3
       ]);
     };
   };
