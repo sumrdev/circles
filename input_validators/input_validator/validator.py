@@ -34,7 +34,7 @@ x1, y1, r1 = input().split()
 x2, y2, r2 = input().split()
 
 # Check for no extra garbage in the input file
-if sys.std.readline() != "":
+if sys.stdin.readline() != "":
     exit(43)
 
 # Check firste circle
