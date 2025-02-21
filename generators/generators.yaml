@@ -4,13 +4,24 @@ solution: /submissions/accepted/marius.py
 version: 2024-11 # use this version of the generators framework
 data:
   sample:
-    data: []
+    data:
+      - '':
+         in: |
+            0 0 10
+            0 0 10
+         ans: "314"
+      - '':
+          in: |
+              100 100 10
+              100 101 10
+          ans: "441"
+
       # Some small examples showing to help understanding of the problem.
       #- '':
       #    in: 1 2
       #    ans: '3'
       # Or to preserve newlines:
-      #- '':
+      # - '':
       #    in: |
       #      1 2
       #      3 4
